@@ -1,0 +1,71 @@
+.container {
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 165px;
+    padding-right: 165px;
+
+    @media @bw1340 {
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+
+    @media @bw1020 {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
+    @media @bw700 {
+        padding-left: 33px;
+        padding-right: 33px;
+    }
+
+    @media @bw700 {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+
+.show-nav {
+    body {
+      // прописываем медиавыражение, для того, чтобы избежать случая с 
+      // отсутсвием скрола на большом экране (человек сделал окно браузера меньше,
+      // затем вернул обратно размер)
+      @media @bw510 {
+        overflow: hidden;
+      }
+    }
+
+    .page-header__nav {
+      @media @bw510 {
+        transform: translateX(0);
+      }
+    }
+  
+    // превращение в крестик
+    .page-header__nav-toggle {
+      &::before {
+        transform: translate(0px, 6px) rotate(45deg);
+        box-shadow: none;
+      }
+      &::after {
+        transform: translate(0px, -6px) rotate(-45deg);
+      }
+    }
+}
+
+.active-btn {
+  .btn {
+    background-color: @lightGreen3;
+    color: @lightGreenHover;
+  }
+}
+
+.notActive-btn {
+  .btn {
+    background-color: transparent;
+    color: @lightGreenHover;
+  }
+}

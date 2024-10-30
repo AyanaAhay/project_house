@@ -1,0 +1,110 @@
+.newCollection {
+    position: relative;
+    background-image: url(../assets/images/backgraundCollection.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0; 
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.3);
+        z-index: 1;
+    }
+
+    @media @bw1020 {
+        background-image: url(../assets/images/backgraundCollectionMini.png);
+    }
+    
+    &__container {
+        position: relative;
+        z-index: 2;
+        .container();
+        display: flex;
+        flex-direction: column;
+        padding-top: 70px;
+        padding-bottom: 70px;
+
+        @media @bw510 {
+            padding-top: 50px;
+            padding-bottom: 50px;
+        }
+    }
+
+    &__title {
+        display: flex;
+        flex-direction: row;
+        padding-bottom: 20px;
+    }
+
+    &__title-text {
+        max-width: 540px;
+        font-weight: 500;
+        font-size: 40px;
+        line-height: 100%;
+        color: @white0;
+
+        @media @bw768 {
+            font-size: 30px;
+        }
+
+        @media @bw510 {
+            font-size: 24px;
+        }
+    }
+
+    &__title-logoContainer{
+        display: flex;
+        align-items: center;
+        margin-right: 20px;
+    }
+
+    &__title-logo {
+        @media @bw768 {
+            width: 60px;
+            height: 60px;
+        }
+
+        @media @bw510 {
+            width: 50px;
+            height: 50px;
+        }
+    }
+
+    &__description {
+        margin-bottom: 60px;
+        max-width: 540px;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 150%;
+        color: @white0;
+
+        @media @bw1020 {
+            margin-bottom: 30px;
+            max-width: 100%;
+        }
+
+        @media @bw510 {
+            font-size: 16px;
+        }
+    }
+
+    &__button {
+        background-color: @yellow;
+        color: @gray;
+
+        @media @bw510 {
+            width: 100%;
+        }
+
+        &:hover {
+            @media (hover: hover) {
+                background-color: @darkYellow;
+                color: @gray;
+            }
+        }
+    }
+}

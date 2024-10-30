@@ -1,0 +1,42 @@
+.btn {
+    display: inline-block;
+    box-sizing: border-box;
+    padding: 21px 60px;
+    border: 1px solid @lightGreenHover;
+    background-color: transparent;
+    outline: none;
+    word-break: break-all;
+    color: @lightGreenHover;
+    font-weight: 500;
+    font-size: 20px;
+    text-align: center;
+    text-decoration: none;
+    transition: color 0.2s, background-color 0.2s, border-color 0.2s;
+    overflow: hidden;
+    cursor: pointer;
+
+    &:hover {
+        @media (hover: hover) {
+            background-color: @lightGreenHover;
+            color: @white0;
+        }
+    }
+
+    @media @bw768 {
+        padding: 19px 52px;
+    }
+
+    @media @bw700 {
+        padding: 15px 41px;
+    }
+
+    @media @bw510 {
+        padding: 15px 30px;
+    }
+
+    &--1 {
+        @media @bw1125 {
+            padding: 15px 30px;
+        }
+    }
+}

@@ -1,0 +1,163 @@
+.page-footer {
+    background-color: @lightGreen;
+    &__container {
+        .container();
+        display: flex;
+        flex-direction: row;
+        padding-top: 23px;
+        padding-bottom: 23px;
+        justify-content: space-between;
+
+        @media @bw1125 {
+            flex-direction: column;
+        }
+    }
+
+    &__right,
+    &__menu {
+        display: flex;
+        flex-direction: row;
+    }
+
+    &__left {
+        margin-right: 115px;
+
+        @media @bw1125 {
+            display: flex;
+            flex-direction: row;
+            margin-right: 0;
+            margin-bottom: 10px;
+            justify-content: space-between;
+        }
+
+        @media @bw700 {
+            margin-bottom: 30px;
+        }
+
+        @media @bw510 {
+            flex-direction: column;
+        }
+    }
+
+    &__right {
+        flex-grow: 1;
+
+        @media @bw700 {
+            flex-direction: column;
+        }
+    }
+
+    &__menu {
+        margin-right: auto;
+
+        @media @bw700 {
+            margin-right: 0;
+            padding-bottom: 16px;
+            justify-content: space-between;
+            border-bottom: 1px solid @lightGreenLine;
+        }
+
+        @media @bw510 {
+            flex-direction: column;
+        }
+    }
+
+    &__menu-left,
+    &__menu-center,
+    &__menu-right {
+        display: flex;
+        flex-direction: column;
+        margin-right: 60px;
+
+        &:last-child {
+            margin-right: 10px;
+        }
+
+        @media @bw510 {
+            margin-right: 0;
+            margin-bottom: 20px;
+        }
+    }
+
+    &__logo {
+        padding-bottom: 35px;
+    }
+
+    &__tel-link,
+    &__menu-title {
+        font-weight: 500;
+        font-size: 20px;
+        color: @gray;
+    }
+
+    &__tel-text,
+    &__menu-link {
+        font-weight: 500;
+        font-size: 18px;
+        color: @lightGray;
+
+        &:hover {
+            @media (hover: hover) {
+                color: @lightGreenHover;
+            }
+        }
+    }
+
+    &__tel-link,
+    &__menu-link,
+    &__contacts-link {
+        text-decoration: none;
+    }
+
+    &__tel-text {
+        padding-top: 8px;
+    }
+
+    &__menu-title,
+    &__menu-link {
+        padding-bottom: 15px;
+    }
+
+    &__contacts-texts {
+        @media @bw700 {
+            display: flex;
+            flex-direction: row;
+        }
+    }
+
+    &__contacts-text {
+        margin-bottom: 8px;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 120%;
+        color: @lightGray;
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+
+    &__contacts-social {
+        display: flex;
+        align-items: center;
+        margin-bottom: 12px;
+    }
+
+    &__contacts-link {
+        margin-right: 30px;
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+
+    &__contacts {
+        @media @bw700 {
+            display: flex;
+            flex-direction: column;
+            padding-top: 15px;
+            padding-bottom: 25px;
+            align-items: center;
+        }
+    }
+}

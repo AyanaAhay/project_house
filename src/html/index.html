@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    @@include('blocks/head.html')
+    <body class="body">
+        @@include('blocks/page-header.html')
+
+        <main class="main">
+            <div class="home">
+                <header class="main-header home__main-header">
+                    <div class="main-header__left">
+                        <picture class="main-header__picture">
+                            <img src="assets/images/bird.png" 
+                                 alt="img" 
+                                 class="main-header__img">
+                        </picture>
+                    </div>
+
+                    <div class="main-header__right">
+                        <h1 class="main-header__title">Реплики картин от
+                            <span class="main-header__title--green">Ink. House</span>
+                        </h1>
+                        
+                        <p class="main-header__text">
+                            Высокое качество отрисовки на плотной бумаге или льняном холсте. 
+                            Редкие произведения, доступные цены.
+                        </p>
+
+                        <div class="main-header__btn" id="js-btn">
+                            <a href="#" class="btn main-header__button">Продукция</a>
+                        </div>
+                    </div>
+                </header>
+
+                @@include('blocks/catalog.html', {"class": "home__catalog"})
+                @@include('blocks/newCollection.html', {"class": "home__newCollection"})
+                @@include('blocks/about.html', {"class": "home__about"})
+            </div>
+        </main>
+        
+
+        @@include('blocks/page-footer.html')
+        <script src="scripts/jquery-3.7.1.min.js"></script>
+        <script src="scripts/main.min.js"></script>
+    </body>
+</html>

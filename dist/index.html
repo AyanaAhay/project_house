@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>House</title>
+  <link rel="stylesheet" href="styles/styles.min.css" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+
+<body class="body">
+  <header class="page-header">
+    <div class="page-header__container">
+      <div class="page-header__left">
+        <a href="index.html" class="page-header__logo">
+          <svg class="page-header__logo-img" width="143" height="35">
+            <use xlink:href="assets/icons/symbols.svg#logo"></use>
+          </svg>
+        </a>
+      </div>
+
+      <divf class="page-header__right">
+        <nav class="page-header__nav">
+          <a href="#" class="page-header__nav-link">Репродукции</a>
+          <a href="#" class="page-header__nav-link">Новинки</a>
+          <a href="#" class="page-header__nav-link">О нас</a>
+        </nav>
+
+        <button type="button" class="page-header__nav-toggle" id="js-navToggle"></button>
+
+        <a href="#" class="page-header__basket">
+          <svg class="page-header__basket-link" width="24" height="24">
+            <use xlink:href="assets/icons/symbols.svg#basket"></use>
+          </svg>
+        </a>
+    </div>
+    </div>
+  </header>
+
+  <main class="main">
+    <div class="home">
+      <header class="main-header home__main-header">
+        <div class="main-header__left">
+          <picture class="main-header__picture">
+            <img src="assets/images/bird.png" alt="img" class="main-header__img">
+          </picture>
+        </div>
+
+        <div class="main-header__right">
+          <h1 class="main-header__title">Реплики картин от
+            <span class="main-header__title--green">Ink. House</span>
+          </h1>
+
+          <p class="main-header__text">
+            Высокое качество отрисовки на плотной бумаге или льняном холсте.
+            Редкие произведения, доступные цены.
+          </p>
+
+          <div class="main-header__btn" id="js-btn">
+            <a href="#" class="btn main-header__button">Продукция</a>
+          </div>
+        </div>
+      </header>
+
+      <section class="catalog home__catalog">
+        <div class="catalog__container">
+          <div class="catalog__top">
+            <h2 class="catalog__title section-title">Репродукции</h2>
+            <div class="catalog__btns catalog__btns-swipe">
+              <button class="catalog__btn" id="btn1">Франция</button>
+              <button class="catalog__btn" id="btn2">Германия</button>
+              <button class="catalog__btn" id="btn3">Англия</button>
+            </div>
+          </div>
+
+          <div class="catalog__cards">
+            <div class="catalog__list card-list1">
+              <!-- prettier-ignore -->
+              <article class="catalog-card card1">
+                <div class="catalog-card__wrapper">
+                  <picture class="catalog-card__picture">
+                    <img src="assets/images/catalogCardList1/hunting.jpg" alt="hunting" class="catalog-card__img">
+                  </picture>
+                  <p class="catalog-card__author">Марсель Руссо</p>
+                  <h4 class="catalog-card__title">Охота Амура</h4>
+                  <p class="catalog-card__description">Холст, масло (50х80)</p>
+                  <p class="catalog-card__price">14 500 руб</p>
+
+                  <div class="catalog-card__btn catalog-card__btn" id="js-btn">
+                    <a href="#" class="btn catalog-card__button btn--1">В корзину</a>
+                  </div>
+                </div>
+              </article>
+
+              <article class="catalog-card card1">
+                <div class="catalog-card__wrapper">
+                  <picture class="catalog-card__picture">
+                    <img src="assets/images/catalogCardList1/lady.jpg" alt="lady" class="catalog-card__img">
+                  </picture>
+                  <p class="catalog-card__author">Анри Селин</p>
+                  <h4 class="catalog-card__title">Дама с собачкой</h4>
+                  <p class="catalog-card__description">Акрил, бумага (50х80)</p>
+                  <p class="catalog-card__price">16 500 руб</p>
+
+                  <div class="catalog-card__btn catalog-card__btn" id="js-btn">
+                    <a href="#" class="btn catalog-card__button btn--1">В корзину</a>
+                  </div>
+                </div>
+              </article>
+
+              <article class="catalog-card card1">
+                <div class="catalog-card__wrapper">
+                  <picture class="catalog-card__picture">
+                    <img src="assets/images/catalogCardList1/procedure.jpg" alt="procedure" class="catalog-card__img">
+                  </picture>
+                  <p class="catalog-card__author">Франсуа Дюпон</p>
+                  <h4 class="catalog-card__title">Процедура</h4>
+                  <p class="catalog-card__description">Цветная литография (40х60)</p>
+                  <p class="catalog-card__price">20 000 руб</p>
+
+                  <div class="catalog-card__btn catalog-card__btn" id="js-btn">
+                    <a href="#" class="btn catalog-card__button btn--1">В корзину</a>
+                  </div>
+                </div>
+              </article>
+
+              <article class="catalog-card card1">
+                <div class="catalog-card__wrapper">
+                  <picture class="catalog-card__picture">
+                    <img src="assets/images/catalogCardList1/rose.jpg" alt="rose" class="catalog-card__img">
+                  </picture>
+                  <p class="catalog-card__author">Луи Детуш</p>
+                  <h4 class="catalog-card__title">Роза</h4>
+                  <p class="catalog-card__description">Бумага, акрил (50х80)</p>
+                  <p class="catalog-card__price">12 000 руб</p>
+
+                  <div class="catalog-card__btn catalog-card__btn" id="js-btn">
+                    <a href="#" class="btn catalog-card__button btn--1">В корзину</a>
+                  </div>
+                </div>
+              </article>
+
+              <article class="catalog-card card1">
+                <div class="catalog-card__wrapper">
+                  <picture class="catalog-card__picture">
+                    <img src="assets/images/catalogCardList1/birds.jpg" alt="birds" class="catalog-card__img">
+                  </picture>
+                  <p class="catalog-card__author">Франсуа Дюпон</p>
+                  <h4 class="catalog-card__title">Птичья трапеза</h4>
+                  <p class="catalog-card__description">Цветная литография (40х60)</p>
+                  <p class="catalog-card__price">22 500 руб</p>
+
+                  <div class="catalog-card__btn catalog-card__btn" id="js-btn">
+                    <a href="#" class="btn catalog-card__button btn--1">В корзину</a>
+                  </div>
+                </div>
+              </article>
+
+              <article class="catalog-card card1">
+                <div class="catalog-card__wrapper">
+                  <picture class="catalog-card__picture">
+                    <img src="assets/images/catalogCardList1/fish.jpg" alt="fish" class="catalog-card__img">
+                  </picture>
+                  <p class="catalog-card__author">Пьер Моранж</p>
+                  <h4 class="catalog-card__title">Пейзаж с рыбой</h4>
+                  <p class="catalog-card__description">Цветная литография (40х60)</p>
+                  <p class="catalog-card__price">20 000 руб</p>
+
+                  <div class="catalog-card__btn catalog-card__btn" id="js-btn">
+                    <a href="#" class="btn catalog-card__button btn--1">В корзину</a>
+                  </div>
+                </div>
+              </article>
+            </div>
+
+            <div class="catalog__list card-list2" style="display:none;">
+              <!-- prettier-ignore -->
+              <article class="catalog-card card2">
+                <div class="catalog-card__wrapper">
+                  <picture class="catalog-card__picture">
+                    <img src="assets/images/catalogCardList2/aboveСity.jpg" alt="aboveСity" class="catalog-card__img">
+                  </picture>
+                  <p class="catalog-card__author">Курт Вернер</p>
+                  <h4 class="catalog-card__title">Над городом</h4>
+                  <p class="catalog-card__description">Цветная литография (40х60)</p>
+                  <p class="catalog-card__price">16 000 руб</p>
+
+                  <div class="catalog-card__btn catalog-card__btn" id="js-btn">
+                    <a href="#" class="btn catalog-card__button btn--1">В корзину</a>
+                  </div>
+                </div>
+              </article>
+
+              <article class="catalog-card card2">
+                <div class="catalog-card__wrapper">
+                  <picture class="catalog-card__picture">
+                    <img src="assets/images/catalogCardList2/chicks.jpg" alt="chicks" class="catalog-card__img">
+                  </picture>
+                  <p class="catalog-card__author">Макс Рихтер</p>
+                  <h4 class="catalog-card__title">Птенцы</h4>
+                  <p class="catalog-card__description">Холст, масло (50х80)</p>
+                  <p class="catalog-card__price">14 500 руб</p>
+
+                  <div class="catalog-card__btn catalog-card__btn" id="js-btn">
+                    <a href="#" class="btn catalog-card__button btn--1">В корзину</a>
+                  </div>
+                </div>
+              </article>
+
+              <article class="catalog-card card1">
+                <div class="catalog-card__wrapper">
+                  <picture class="catalog-card__picture">
+                    <img src="assets/images/catalogCardList1/hunting.jpg" alt="hunting" class="catalog-card__img">
+                  </picture>
+                  <p class="catalog-card__author">Марсель Руссо</p>
+                  <h4 class="catalog-card__title">Охота Амура</h4>
+                  <p class="catalog-card__description">Холст, масло (50х80)</p>
+                  <p class="catalog-card__price">14 500 руб</p>
+
+                  <div class="catalog-card__btn catalog-card__btn" id="js-btn">
+                    <a href="#" class="btn catalog-card__button btn--1">В корзину</a>
+                  </div>
+                </div>
+              </article>
+
+              <article class="catalog-card card1">
+                <div class="catalog-card__wrapper">
+                  <picture class="catalog-card__picture">
+                    <img src="assets/images/catalogCardList1/lady.jpg" alt="lady" class="catalog-card__img">
+                  </picture>
+                  <p class="catalog-card__author">Анри Селин</p>
+                  <h4 class="catalog-card__title">Дама с собачкой</h4>
+                  <p class="catalog-card__description">Акрил, бумага (50х80)</p>
+                  <p class="catalog-card__price">16 500 руб</p>
+
+                  <div class="catalog-card__btn catalog-card__btn" id="js-btn">
+                    <a href="#" class="btn catalog-card__button btn--1">В корзину</a>
+                  </div>
+                </div>
+              </article>
+
+              <article class="catalog-card card1">
+                <div class="catalog-card__wrapper">
+                  <picture class="catalog-card__picture">
+                    <img src="assets/images/catalogCardList1/procedure.jpg" alt="procedure" class="catalog-card__img">
+                  </picture>
+                  <p class="catalog-card__author">Франсуа Дюпон</p>
+                  <h4 class="catalog-card__title">Процедура</h4>
+                  <p class="catalog-card__description">Цветная литография (40х60)</p>
+                  <p class="catalog-card__price">20 000 руб</p>
+
+                  <div class="catalog-card__btn catalog-card__btn" id="js-btn">
+                    <a href="#" class="btn catalog-card__button btn--1">В корзину</a>
+                  </div>
+                </div>
+              </article>
+
+              <article class="catalog-card card1">
+                <div class="catalog-card__wrapper">
+                  <picture class="catalog-card__picture">
+                    <img src="assets/images/catalogCardList1/rose.jpg" alt="rose" class="catalog-card__img">
+                  </picture>
+                  <p class="catalog-card__author">Луи Детуш</p>
+                  <h4 class="catalog-card__title">Роза</h4>
+                  <p class="catalog-card__description">Бумага, акрил (50х80)</p>
+                  <p class="catalog-card__price">12 000 руб</p>
+
+                  <div class="catalog-card__btn catalog-card__btn" id="js-btn">
+                    <a href="#" class="btn catalog-card__button btn--1">В корзину</a>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="newCollection home__newCollection">
+        <div class="newCollection__container">
+          <div class="newCollection__title">
+            <div class="newCollection__title-logoContainer">
+              <svg class="newCollection__title-logo" width="80" height="80">
+                <use xlink:href="assets/icons/symbols.svg#star"></use>
+              </svg>
+            </div>
+            <p class="newCollection__title-text">Новая коллекция французских авторов</p>
+          </div>
+          <div class="newCollection__description">
+            Сложно сказать, почему акционеры крупнейших компаний призывают нас к новым свершениям,
+            которые, в свою очередь, должны быть заблокированы в рамках своих собственных рациональных
+            ограничений.
+            <br>
+            <br>
+            Принимая во внимание показатели успешности, граница обучения кадров предопределяет
+            высокую востребованность направлений прогрессивного развития.
+          </div>
+          <div class="newCollection__btn" id="js-btn">
+            <a href="#" class="btn newCollection__button">Ознакомиться</a>
+          </div>
+        </div>
+      </section>
+      <section class="about home__about">
+        <div class="about__container">
+          <div class="about__left">
+            <picture class="about__picture">
+              <img src="../assets/images/hand.png" alt="img" class="about__image">
+            </picture>
+          </div>
+          <div class="about__right">
+            <div class="about__title">Наша команда</div>
+            <div class="about__description">
+              Значимость этих проблем настолько очевидна, что базовый вектор развития
+              позволяет оценить значение экспериментов, поражающих по своей масштабности
+              и грандиозности. Мы вынуждены отталкиваться от того, что консультация с
+              широким активом.
+            </div>
+            <div class="about__people">
+              <img src="../assets/images/human1.png" alt="img" class="about__human">
+              <img src="../assets/images/human2.png" alt="img" class="about__human">
+              <img src="../assets/images/human3.png" alt="img" class="about__human">
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+
+  <footer class="page-footer">
+    <div class="page-footer__container">
+      <div class="page-footer__left">
+        <div class="page-footer__logo">
+          <a href="index.html" class="page-footer__logo1">
+            <svg class="page-footer__logo-img" width="143" height="35">
+              <use xlink:href="assets/icons/symbols.svg#logo"></use>
+            </svg>
+          </a>
+        </div>
+
+        <div class="page-footer__tel">
+          <a href="tel:+79995435454" class="page-footer__tel-link">+7 (999) 543-54-54</a>
+          <p class="page-footer__tel-text">Мастерская</p>
+        </div>
+      </div>
+      <div class="page-footer__right">
+        <div class="page-footer__menu">
+          <div class="page-footer__menu-left">
+            <p class="page-footer__menu-title">Репродукции</p>
+            <a href="#" class="page-footer__menu-link">Франция</a>
+            <a href="#" class="page-footer__menu-link">Германия</a>
+            <a href="#" class="page-footer__menu-link">Англия</a>
+          </div>
+          <div class="page-footer__menu-center">
+            <p class="page-footer__menu-title">Новинки</p>
+            <a href="#" class="page-footer__menu-link">2021</a>
+            <a href="#" class="page-footer__menu-link">2020</a>
+          </div>
+          <div class="page-footer__menu-right">
+            <p class="page-footer__menu-title">О нас</p>
+            <a href="#" class="page-footer__menu-link">Художники</a>
+            <a href="#" class="page-footer__menu-link">Менеджеры</a>
+          </div>
+        </div>
+        <div class="page-footer__contacts">
+          <div class="page-footer__contacts-social">
+            <a href="index.html" class="page-footer__contacts-link">
+              <svg class="page-footer__logo-img" width="24" height="24">
+                <use xlink:href="assets/icons/symbols.svg#facebook"></use>
+              </svg>
+            </a>
+
+            <a href="index.html" class="page-footer__contacts-link">
+              <svg class="page-footer__logo-img" width="20" height="20">
+                <use xlink:href="assets/icons/symbols.svg#inst"></use>
+              </svg>
+            </a>
+
+            <a href="index.html" class="page-footer__contacts-link">
+              <svg class="page-footer__logo-img" width="24" height="24">
+                <use xlink:href="assets/icons/symbols.svg#youtube"></use>
+              </svg>
+            </a>
+          </div>
+          <div class="page-footer__contacts-texts">
+            <p class="page-footer__contacts-text">Ink. House ®</p>
+            <p class="page-footer__contacts-text">All rights reserved</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="scripts/jquery-3.7.1.min.js"></script>
+  <script src="scripts/main.min.js"></script>
+</body>
+
+</html>
